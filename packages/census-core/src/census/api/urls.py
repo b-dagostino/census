@@ -1,0 +1,5 @@
+API_DATA_CATALOG = "https://api.census.gov/data.json"
+API_DATA_CATALOG_2022 = "https://api.census.gov/data/2022.json"
+API_DATA_CATALOG_2020 = "https://api.census.gov/data/2020.json"
+API_DATA_CATALOG_CONTEXT = "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld"
+API_DATA_CATALOG_SCHEMA = "https://project-open-data.cio.gov/v1.1/schema/catalog.json"

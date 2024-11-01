@@ -1,0 +1,32 @@
+[project]
+name = "census-products"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Brandon D'Agostino", email = "bdag@stanford.edu" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ipython>=8.27.0",
+    "hatchling>=1.25.0",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/census"]
+
+[tool.hatch.build.hooks.custom]
+dependencies = [
+  'census-core @ file://${PROJECT_ROOT}/packages/census-core'
+]
